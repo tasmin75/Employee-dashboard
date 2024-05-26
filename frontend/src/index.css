@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Play:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-Montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  html {
+    @apply font-Montserrat;
+  }
+
+  h1 {
+    @apply text-xl font-medium capitalize;
+  }
+}
+
+.link {
+  @apply p-2.5 flex rounded-md gap-4 items-center md:cursor-pointer cursor-default duration-300 font-medium w-[200px] ml-3
+}
+
+.active {
+  @apply bg-blue-50 text-blue-800;
+}
+
+.link.active svg path {
+  fill: 'red'
+}
+
+
+#SvgjsText1117{
+  display: hidden!important;  
+}
+
+
+/* Your other styles here */
